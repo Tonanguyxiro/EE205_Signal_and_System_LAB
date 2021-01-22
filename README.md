@@ -6,6 +6,8 @@ Here is the lab session of course Signal and System (EE205) in Southern Universi
 
 ## Lab 1: MATLAB Programming
 
+**LAB1 should be submitted before 4th March**
+
 ## Lab 2: Linear Time-Invariant Systems
 
 ## Lab 3: Fourier Series Representation of Periodic Signals
