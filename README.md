@@ -16,8 +16,8 @@ Here is the lab session of course Signal and System (EE205) in Southern Universi
 
 ## Lab 5: System, Transform, Convolution and Filter
 
-And also there will we two projects to help studets apply all the technocs learned. The two projects will be held in another responsary
+And also there will we two projects to help studets apply all the technocs learned. The two projects will be held in another respositories
 
-1. Project 1. Speech synthesis and perception with envelope cue
+- Project 1. Speech synthesis and perception with envelope cue
 
-2. Project 2: OFDM Technology
+- Project 2: OFDM Technology
