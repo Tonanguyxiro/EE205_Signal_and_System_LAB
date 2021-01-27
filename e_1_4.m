@@ -1,0 +1,16 @@
+%只不满足线性性质
+n=0:1:10;
+x1=n;
+x2=3*n;
+y1=x2.^3;
+y2=3*x1.^3;
+subplot(2,1,1);
+stem(n,y1);
+title('1.4(e)-1');
+xlabel('x[n]');
+ylabel('y[n]');
+subplot(2,1,2);
+stem(n,y2,'r');
+title('1.4(e)-2');
+xlabel('x[n]');
+ylabel('y[n]');
