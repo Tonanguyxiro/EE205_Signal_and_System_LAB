@@ -3,7 +3,7 @@
 ## IMPORTANT
 
 **The name of the file**
-`Problem_subquestion_others`, like `1_5_a1.m`, and set the name of the photos with `filename_photoname.png`
+`Problem_subquestion_others`, like `P1_5_a1.m`, and set the name of the photos with `filename_photoname.png`
 
 ## Introduction
 
