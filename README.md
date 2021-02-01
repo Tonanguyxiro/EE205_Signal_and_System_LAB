@@ -1,5 +1,10 @@
 # EE205 Signal and System LAB
 
+## IMPORTANT
+
+**The name of the file**
+`Problem_subquestion_others`, like `1_5_a1.m`, and set the name of the photos with `filename_photoname.png`
+
 ## Introduction
 
 Here is the lab session of course Signal and System (EE205) in Southern University of Science and Technology (Shenzhen)
