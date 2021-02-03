@@ -5,7 +5,7 @@
 **The files in this project should follow the following instructions.**
 
 ### The name of the file
-`Problem_subquestion_others.m`, like `P1_5_a1.m`, and set the name of the photos with `filename_photoname_out/photoindex.png`like `P_1_5_a1_out1.png`
+`Problem_subquestion_others.m`, like `P1_5_a1.m`, and set the name of the photos with `filename_photoname_out/photoindex.png` like `P_1_5_a1_out1.png`
 
 ### The part contained in the code
 1. The code implementation

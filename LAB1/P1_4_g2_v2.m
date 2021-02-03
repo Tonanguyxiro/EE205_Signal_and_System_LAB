@@ -7,7 +7,6 @@ subplot(2,1,1);
 stem(n,x1);
 title('1,4(g)-5');
 xlabel('x[n]=δ[n-2]')
-
 subplot(2,1,2);
 stem(n,y1);
 title('1.4(g)-6');

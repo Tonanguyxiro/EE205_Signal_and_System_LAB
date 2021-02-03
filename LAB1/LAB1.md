@@ -2,5 +2,9 @@
 
 ## Problem 1.4
 
-### Question a
+### Task a
+
+![](P1_4_a_out.png)
+
+As shown in the figure, $x_1[n] = \delta[n]$, $x_2 = 2\delta[n]$, $y_1 $
 

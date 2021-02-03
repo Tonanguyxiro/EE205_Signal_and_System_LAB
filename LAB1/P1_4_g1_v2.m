@@ -11,20 +11,23 @@ stem(n,x1);
 title('1.4(g)-1');
 xlabel('n')
 ylabel('x[n]=δ[n-2]');
+
 subplot(2,2,2);
 stem(n,x2);
 title('1.4(g)-2');
 xlabel('n')
 ylabel('x[2n]=δ[n-1]');
+
 subplot(2,2,3);
 stem(n,x3);
 title('1.4(g)-3');
 xlabel('n')
 ylabel('y[n-2]=x[2(n-2)]=δ[n-3]');
+
 subplot(2,2,4);
 stem(n,x4);
 title('1.4(g)-4');
 xlabel('n')
 ylabel('x[2n-2]=δ[n-2]');
 
-saveas(gcf, "LAB1/P1_5_g1_out.png")
+saveas(gcf, "LAB1/P1_4_g1_out2.png")
