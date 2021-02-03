@@ -2,8 +2,16 @@
 
 ## IMPORTANT
 
-**The name of the file**
-`Problem_subquestion_others`, like `P1_5_a1.m`, and set the name of the photos with `filename_photoname.png`
+**The files in this project should follow the following instructions.**
+
+### The name of the file
+`Problem_subquestion_others.m`, like `P1_5_a1.m`, and set the name of the photos with `filename_photoname_out/photoindex.png`like `P_1_5_a1_out1.png`
+
+### The part contained in the code
+1. The code implementation
+2. Plot
+3. save the plots by function `saveas();`
+
 
 ## Introduction
 
@@ -12,6 +20,8 @@ Here is the lab session of course Signal and System (EE205) in Southern Universi
 ## Lab 1: MATLAB Programming
 
 **LAB1 should be submitted before 4th March**
+
+In lab 1
 
 ## Lab 2: Linear Time-Invariant Systems
 
