@@ -5,12 +5,16 @@
 **The files in this project should follow the following instructions.**
 
 ### The name of the file
-`Problem_subquestion_others.m`, like `P1_5_a1.m`, and set the name of the photos with `filename_photoname_out/photoindex.png` like `P_1_5_a1_out1.png`
+1. We will create a `LABx` folder for each LAB Session. 
+2. Files need to be named as `Problem_subquestion_others.m`, like `P1_5_a1.m`, except the name of functions, and set the name of the photos with `filename_photoname_out/photoindex.png` like `P_1_5_a1_out1.png`
 
 ### The part contained in the code
-1. The code implementation
-2. Plot
-3. save the plots by function `saveas();`
+1. **The code implementation**
+2. **Plot**: We need to add all the setings to the plot in the code so that we do not need to adjust the polt if we replot it.
+3. **Save** the plots by function `saveas(gcf, "LAB1/P1_4_f_out2.png");`, here we are running the program in root dictionary.
+
+### About the lab report
+To be completed
 
 
 ## Introduction
