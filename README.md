@@ -14,7 +14,7 @@
 3. **Save** the plots by function `saveas(gcf, "LAB1/P1_4_f_out2.png");`, here we are running the program in root dictionary.
 
 ### About the lab report
-To be completed
+To be completed.
 
 
 ## Introduction
