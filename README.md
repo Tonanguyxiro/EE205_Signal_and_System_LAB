@@ -45,7 +45,7 @@ In lab 1
 
 #### Proofing of  linear system
 
-We use $\delta [n]$ as the test input
+We use $\delta [n]$ as the test input, 
 
 ## Lab 2: Linear Time-Invariant Systems
 
