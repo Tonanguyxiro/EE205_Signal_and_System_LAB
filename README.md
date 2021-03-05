@@ -25,18 +25,22 @@ Any problem encontered in the LAB should be pasted to the issues page.
 
 1. The introduction section should include what you will do in this LAB
 2. You can copy from the introduction of the problem
-3. Argument and Analysis should be included in the LAB report
-4. All MATLAB codes should be included at the end of the file.
+3. *Argument* and *Analysis* should be included in the LAB report
+4. **All MATLAB codes** should be included at the end of the file.
+   1. If the problem only require code, just paste the code here.
 
 #### Content
 
 In a single LAB we should perform following steps:
 
-1. Construct
+1. Construct (a) signal(s)
 2. Emulate
 3. Compare
 
 All the steps should be implicted in the report
+
+#### Experience
+
 
 ## Introduction
 
@@ -66,7 +70,20 @@ We use unit pulse $\delta [n]$ as the test input, the system should satisfy:
 The out won''t depended on the input from future, to proof this we need to:
 
 1. construct a step signal
-2.
+
+#### Proofing the stability
+
+输入有界，输出有界
+
+when n=0 y=-Inf, the system is not stable.
+
+#### Proofing inveribility
+
+1 y only have one x to obtain it.
+
+#### Proofing time-invarient
+
+
 
 ## Lab 2: Linear Time-Invariant Systems
 
