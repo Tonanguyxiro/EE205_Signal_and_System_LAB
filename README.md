@@ -11,9 +11,13 @@
 
 ### The part contained in the code
 
-1. **The code implementation**
+1. **The code implementation of the problem**
 2. **Plot**: We need to add all the setings to the plot in the code so that we do not need to adjust the polt if we replot it.
 3. **Save** the plots by function `saveas(gcf, "LAB1/P1_4_f_out2.png");`, here we are running the program in root dictionary.
+
+### Issues
+
+Any problem encontered in the LAB should be pasted to the issues page.
 
 ### About the lab report
 
@@ -26,10 +30,17 @@
 
 #### Content
 
+In a single LAB we should perform following steps:
+
+1. Construct
+2. Emulate
+3. Compare
+
+All the steps should be implicted in the report
 
 ## Introduction
 
-Here is the lab session of course Signal and System (EE205) in Southern University of Science and Technology (Shenzhen)
+Here is the lab session of course **Signal and System** *(EE205)* in *Southern University of Science and Technology* (Shenzhen)
 
 
 ### Team members
@@ -45,7 +56,17 @@ In lab 1
 
 #### Proofing of  linear system
 
-We use $\delta [n]$ as the test input, 
+We use unit pulse $\delta [n]$ as the test input, the system should satisfy:
+
+1. 齐次性
+2. 叠加性
+
+#### Proofing of casualty
+
+The out won''t depended on the input from future, to proof this we need to:
+
+1. construct a step signal
+2.
 
 ## Lab 2: Linear Time-Invariant Systems
 
