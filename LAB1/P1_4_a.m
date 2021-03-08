@@ -6,16 +6,13 @@ y1=sin((pi/2)*x1);
 y2=sin((pi/2)*x2);
 
 %Plot
-subplot(2,1,1);
-stem(n,y1);
-title('1.4 (a)-1');
-xlabel('n');
-ylabel('y_1=sin((\pi/2) x_1[n])');
 
-subplot(2,1,2);
-stem(n,y2,'r');
-title('1.4(a)-2');
+stem(n,y1,'g--*');
+hold on;
+stem(n,y2,'r--s');
+legend('y_1=sin((\pi/2) x_1[n]','y_2=sin((\pi/2) x_2[n]')
+title('1.4 (a)');
 xlabel('n');
-ylabel('y_2=sin((\pi/2) x_2[n])');
+ylabel('y[n])');
 
 saveas(gcf, "LAB1/P1_4_a_out.png")

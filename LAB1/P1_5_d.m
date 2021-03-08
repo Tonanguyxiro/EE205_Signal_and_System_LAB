@@ -7,12 +7,10 @@ y1=diffeqn(a,x,yn1);
 yn1=0.5;
 y2=diffeqn(a,x,yn1);
 
-subplot(1,2,1);
 stem(n,y1,'r--p');
-xlabel('y[-1]=0');
+hold on;
+stem(n,y2,'b--s');
+legend('y[-1]=0','y[-1]=0.5');
 
-subplot(1,2,2);
-stem(n,y2,'m--s');
-xlabel('y[-1]=0.5');
-
+title('1.5(d)');
 saveas(gcf, "LAB1/P1_5_d_out.png")
