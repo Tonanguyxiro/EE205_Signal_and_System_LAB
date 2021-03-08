@@ -17,4 +17,4 @@ stem(n,x3);
 title('1.4(g)-9');
 xlabel('y[n]=x[2n]=u[2n]');
 
-saveas(gcf, "LAB1/P1_5_g3_out.png")
+saveas(gcf, "LAB1/P1_4_g3_out.png")
