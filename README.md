@@ -27,7 +27,6 @@ Any problem encontered in the LAB should be pasted to the issues page.
 2. You can copy from the introduction of the problem
 3. *Argument* and *Analysis* should be included in the LAB report
 4. **All MATLAB codes** should be included at the end of the file.
-   1. If the problem only require code, just paste the code here.
 
 #### Content
 
@@ -44,7 +43,7 @@ All the steps should be implicted in the report
 
 ## Introduction
 
-Here is the lab session of course **Signal and System** *(EE205)* in *Southern University of Science and Technology* (Shenzhen)
+Here is the lab session of course **Signal and System** *(EE205)* in *Southern University of Science and Technology* (Shenzhen). In the lab session, we will use MATLAB to explore the properties of different signals.
 
 
 ### Team members
@@ -80,10 +79,6 @@ when n=0 y=-Inf, the system is not stable.
 #### Proofing inveribility
 
 1 y only have one x to obtain it.
-
-#### Proofing time-invarient
-
-
 
 ## Lab 2: Linear Time-Invariant Systems
 
