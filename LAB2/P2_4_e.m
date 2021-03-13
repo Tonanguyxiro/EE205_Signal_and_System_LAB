@@ -1,5 +1,5 @@
 % Problem 2.4(e)
-
+% TODO Check it!!!!
 x1 = [1 1 1 1 0 0 0 0 0 0];
 nx1 = 0:1:9;
 
@@ -21,18 +21,19 @@ ye2_inter = conv(he2, x1)
 
 subplot(3,1,1);
 hold on
-stem(nye1, ye1);
-stem(nye1, ye1_inter);
+stem(nye1, ye1, 'm--s');
+stem(nye1, ye1_inter, 'r--p');
+legend('y_{e1}[n] = x_1[n]*h_{e1}[n]', 'y_{e1}[n] = x_1[n]*h_{e1}[n]', 'Location', 'northeast');
 
 subplot(3,1,2);
 hold on
-stem(nye2, ye2);
-stem(nye2, ye2_inter);
+stem(nye2, ye2, 'm--s');
+stem(nye2, ye2_inter, 'r--p');
 
 subplot(3,1,3);
 hold on
-stem(nye1, ye1);
-stem(nye2, ye2);
+stem(nye1, ye1, 'm--s');
+stem(nye2, ye2, 'r--p');
 
 saveas(gcf, "plots/P2_4_e_out.png");
 close;

@@ -30,8 +30,12 @@ hparallel = hg1 + hg2;
 yg2 = conv(xg, hparallel);
 nyg2 = nyg1;
 
-stem(nyg1, yg1);
-stem(nyg2, yg2);
+figure;
+hold on;
+stem(nyg1, yg1, 'm--s');
+stem(nyg2, yg2, 'r--p');
+title('y_{g1}[n] & y_{g2}[n]');
+legend('y_{g1}[n]', 'y_{g2}[n]', 'Location', 'northeast');
 
 saveas(gcf, "plots/P2_4_g_out.png");
 close;
