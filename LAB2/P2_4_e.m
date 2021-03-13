@@ -9,7 +9,7 @@ nh1 = 0:1:4;
 
 he1 = h1;
 he2 = [0 0 h1];
-nhe2 = 1:1:6;
+nhe2 = 0:1:6;
 
 nye1 = nh1(1)+nx1(1):1:nh1(end)+nx1(end);
 nye2 = nhe2(1)+nx1(1):1:nhe2(end)+nx1(end);
@@ -34,5 +34,6 @@ hold on
 stem(nye1, ye1);
 stem(nye2, ye2);
 
-saveas(gcf, "P2_4_e.png");
+saveas(gcf, "plots/P2_4_e_out.png");
+close;
 

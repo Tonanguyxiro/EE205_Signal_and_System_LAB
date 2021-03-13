@@ -14,4 +14,5 @@ ny = nh1(1)+nx1(1):1:nh1(end)+nx1(end)
 subplot(2,1,1), stem(ny, y1), title("y_1[n]=x_1[n]*(h_1[n]+h_2[n]");
 subplot(2,1,2), stem(ny, y2), title("y_2[n]=x_1[n]*h_1[n]+x_1[n]*h_2[n]");
 
-saveas(gcf, "P2_4_c_out.png")
+saveas(gcf, "plots/P2_4_c_out.png");
+close;

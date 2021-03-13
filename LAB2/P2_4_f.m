@@ -29,5 +29,8 @@ figure;
 stem(nyf1, yf1);
 stem(nyf2, yf2);
 
+saveas(gcf, "P2_4_f_out.png");
+close;
+
 
 

@@ -33,6 +33,7 @@ nyg2 = nyg1;
 stem(nyg1, yg1);
 stem(nyg2, yg2);
 
-saveas(gcf, "P2_4_g_out.png");
+saveas(gcf, "plots/P2_4_g_out.png");
+close;
 
 
