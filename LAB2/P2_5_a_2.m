@@ -5,19 +5,9 @@ x2 = [0 1 0 0 0 0];
 x3 = [1 2 0 0 0 0];
 nx = 0:5;
 
-xe1 = [0 0 x1];
-xe2 = [0 0 x2];
-xe3 = [0 0 x3];
-
-w1 = x1;
-w2 = x2;
-w3 = x3;
-
-for i = 3:8
-    w1(i-2) = xe1(i) - xe1(i-1) - xe1(i-2);
-    w2(i-2) = xe2(i) - xe2(i-1) - xe2(i-2);
-    w3(i-2) = xe3(i) - xe3(i-1) - xe3(i-2);
-end
+w1 = cos(x1);
+w2 = cos(x2);
+w3 = cos(x3);
 
 w4 = w1 + 2*w2;
 
@@ -29,7 +19,8 @@ stem(nx, w3, 'm--s')
 hold on
 stem(nx, w4, 'r--p')
 set(get(gca, 'Title'), 'String', 'w_3[n] & w_4[n]');
+legend('w_3[n]', 'w_4[n]', 'Location', 'southeast');
 
-saveas(gcf, "plots/P2_5_a_1_out.png");
+saveas(gcf, "plots/P2_5_a_2_out.png");
 
 close;
