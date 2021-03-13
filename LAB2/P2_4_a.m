@@ -11,4 +11,6 @@ subplot(3, 1, 1), stem(nx1, x1), title("x_1[n]");
 subplot(3, 1, 2), stem(nh1, h1), title("h_1[n]");
 subplot(3, 1, 3), stem(nh1, h2), title("h_2[n]");
 
-saveas(gcf, "P2_4_a_out.png");
+saveas(gcf, "plots/P2_4_a_out.png");
+
+close;
