@@ -79,6 +79,7 @@ subplot(3, 1, 1);
 hold on;
 stem(nz, s1, 'm--s');
 stem(nz, z1, 'r--p');
+legend('s_1[n]', 'z_1[n]', 'Location', 'northeast');
 title('s_1[n] & z_1[n]');
 xlabel('n');
 ylabel('s_1[n] / z_1[n]');
