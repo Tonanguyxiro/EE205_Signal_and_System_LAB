@@ -1,5 +1,5 @@
 % Problem 2.4(e)
-% TODO Check it!!!!
+
 x1 = [1 1 1 1 0 0 0 0 0 0];
 nx1 = 0:1:9;
 
@@ -23,17 +23,21 @@ subplot(3,1,1);
 hold on
 stem(nye1, ye1, 'm--s');
 stem(nye1, ye1_inter, 'r--p');
-legend('y_{e1}[n] = x_1[n]*h_{e1}[n]', 'y_{e1}[n] = x_1[n]*h_{e1}[n]', 'Location', 'northeast');
+legend('y_{e1}[n] = x_1[n]*h_{e1}[n]', 'y_{e1}[n] = h_{e1}[n]*x_1[n]', 'Location', 'northeast');
 
 subplot(3,1,2);
 hold on
 stem(nye2, ye2, 'm--s');
 stem(nye2, ye2_inter, 'r--p');
+legend('y_{e2}[n] = x_2[n]*h_{e2}[n]', 'y_{e2}[n] = h_{e2}[n]*x_2[n]', 'Location', 'northeast');
+
 
 subplot(3,1,3);
 hold on
-stem(nye1, ye1, 'm--s');
+stem(nye1+2, ye1, 'm--s');
 stem(nye2, ye2, 'r--p');
+legend('y_{e1}[n-n_0]', 'y_{e2}[n]', 'Location', 'northeast');
+
 
 saveas(gcf, "plots/P2_4_e_out.png");
 close;

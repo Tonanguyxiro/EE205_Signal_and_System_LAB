@@ -20,7 +20,7 @@ hf2 = h1;
 nhf2 = nh1;
 
 hseries = conv(hf1, hf2);
-nhseries = (nhf1(1)+nhf2(1)):1:(nhf1(end)+nhf2(end));
+nhseries = (nhf1(1)+nhf2(1)):(nhf1(end)+nhf2(end));
 
 yf2 = conv(x1, hseries);
 nyf2 = (nx1(1)+nhseries(1)):(nx1(end)+nhseries(end));
