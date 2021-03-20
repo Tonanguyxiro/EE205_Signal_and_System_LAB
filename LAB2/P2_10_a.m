@@ -2,7 +2,7 @@
 
 load inputs/lineup.mat
 
-% sound(y, 8192); 
+%sound(y, 8192); 
 
 figure;
 plot(y)
@@ -37,7 +37,19 @@ close;
 % 2.10(b) -------------------------------
 
 % This is not a problem that require to be verified by MATLAB
+A = [1 zeros(1, 999) 0.5];
+B = [1];
+z = filter(B, A, y);
 
+figure;
+stem(conv(z,he),'*');
+hold on;
+stem(y,'p--g')
+title('y[n] & z[n]*he[n]');
+xlabel('n');
+
+saveas(gcf, "plots/P2_10_b_out.png");
+close;
 % 2.10(c) -------------------------------
 a = [1 zeros(1, 999) 0.5];
 b = [1];
