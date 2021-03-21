@@ -1,6 +1,11 @@
 % Problem 2.10(f)
 
 load inputs/lineup.mat
+A = [1 zeros(1, 999) 0.5];
+B = [1];
+z = filter(B, A, y);
+rxx=conv(z, fliplr(z));
+stem(rxx);
 
 % For y1 ----------------------------------------
 ryy1 = conv(y, flip(y));
@@ -10,13 +15,13 @@ figure;
 plot(nryy1, ryy1);
 title('y[n]*y[-n]');
 saveas(gcf, "plots/P2_10_f_out1_1.png");
-close;
+
 %! Here N is equal to the distance of tow peak.
 
-% N: 1000
-% Peak 1: 9967
+% N:1000
+% Peak 1: 9976
 % Peak 2: 3957
-% alpha: 0.4938
+% alpha: 0.5
 
 N = 1000;
 alpha = 0.5;
@@ -31,7 +36,7 @@ figure;
 plot(nryy2, ryy2);
 title('y_2[n]*y_2[-n]');
 saveas(gcf, "plots/P2_10_f_out1_2.png");
-close;
+
 
 % N: 501
 % Peak 1: 13160
@@ -51,7 +56,7 @@ figure;
 plot(nryy3, ryy3);
 title('y_3[n]*y_3[-n]');
 saveas(gcf, "plots/P2_10_f_out1_3.png");
-close;
+
 
 % N1: 751
 % alpha1: 0.4
@@ -63,7 +68,7 @@ close;
 
 N = 751;
 N1 = 2252;
-alpha = 0.5;
+alpha = 0.4;
 alpha1 = 0.28;
 b = [1 zeros(1, N-1) alpha zeros(1, N1-1)] + [1 zeros(1, N1-1) alpha1 zeros(1, N-1)];
 yo3 = filter(1, b, y);

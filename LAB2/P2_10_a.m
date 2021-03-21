@@ -77,7 +77,7 @@ plot(z);
 title('Sound after filtering');
 
 saveas(gcf, "plots/P2_10_d_out.png");
-close;
+%close;
 sound(z, 8192); 
 
 % 2.10(e) -------------------------------
