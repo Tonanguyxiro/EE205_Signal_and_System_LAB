@@ -42,6 +42,7 @@ saveas(gcf, "plots/P2_10_f_out1_2.png");
 a2=rxx(7000);b2=2*rxx(7501);c2=rxx(7000)-ryy2(7000);
 d2=b2^2-4*a2*c2;
 x2=(-b2+d2^0.5)/(2*a2);
+
 % N: 501
 % Peak 1: 13160
 % Peak 2: 6938
