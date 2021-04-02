@@ -13,7 +13,14 @@
 
 1. **The code implementation of the problem**
 2. **Plot**: We need to add all the setings to the plot in the code so that we do not need to adjust the polt if we replot it.
-3. **Save** the plots by function `saveas(gcf, "LAB1/P1_4_f_out2.png");`, here we are running the program in root dictionary.
+3. **Save**: the plots by function `saveas(gcf, "plots/P1_4_f_out2.png");`, here we are running the program in root dictionary. After save the image, you can use `close` to close the windows
+4. For convinence, each signal `x` should have a relative position notation `nx`, which can be used in plots.
+
+### Basci instructions about plots
+
+1. `title('text')` for the title of the plots
+2. 
+
 
 ### Issues
 
