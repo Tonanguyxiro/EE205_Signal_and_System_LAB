@@ -68,3 +68,92 @@ saveas(gcf, "plots/P3_5_e_out.png");
 close;
 
 % 3.5(f)
+m=0:1:31;
+a3_2=[a3(1:3) zeros(1,27) a3(31:32)];
+a3_8=[a3(1:9) zeros(1,15) a3(25:32)];
+a3_12=[a3(1:13) zeros(1,7) a3(21:32)];
+a3_all=a3;
+
+x3_2=32*ifft(a3_2);
+x3_8=32*ifft(a3_8);
+x3_12=32*ifft(a3_12);
+x3_all=32*ifft(a3_all);
+
+subplot(2,2,1);
+stem(m,x3_2,'y');
+xlabel('n');
+title('x3 2[n]');
+
+subplot(2,2,2);
+stem(m,x3_8,'m');
+xlabel('n');
+title('x3 8[n]');
+
+subplot(2,2,3);
+stem(m,x3_12,'r');
+xlabel('n');
+title('x3 12[n]');
+
+subplot(2,2,4);
+stem(m,x3_all,'b');
+xlabel('n');
+title('x3 all[n]');
+
+saveas(gcf, "plots/P3_5_f_out.png");
+close;
+
+% 3.5(g)
+subplot(2,1,1);
+stem(m,real(x3_all),'r');
+xlabel('n');
+title('real(x3 all[n])');
+
+subplot(2,1,2);
+stem(m,imag(x3_all),'g');
+xlabel('n');
+title('imag(x3 all[n])');
+
+saveas(gcf, "plots/P3_5_g_out.png");
+close;
+
+% 3,5(h)
+a3_5=[a3(1:3) zeros(1,27) a3(31:32)];
+a3_15=[a3(1:8) zeros(1,17) a3(26:32)];
+a3_25=[a3(1:13) zeros(1,7) a3(21:32)];
+a3_29=[a3(1:15) zeros(1,3) a3(19:32)];
+a3_32=a3;
+
+x3_5=32*ifft(a3_5);
+x3_15=32*ifft(a3_15);
+x3_25=32*ifft(a3_25);
+x3_29=32*ifft(a3_29);
+x3_32=32*ifft(a3_32);
+
+subplot(3,2,1);
+stem(m,x3_5,'y');
+xlabel('n');
+title('use 5 series');
+
+subplot(3,2,2);
+stem(m,x3_15,'m');
+xlabel('n');
+title('use 15 series');
+
+subplot(3,2,3);
+stem(m,x3_25,'r');
+xlabel('n');
+title('use 25 series');
+
+subplot(3,2,4);
+stem(m,x3_29,'b');
+xlabel('n');
+title('use 29 series');
+
+subplot(3,2,5);
+stem(m,x3_32,'b');
+xlabel('n');
+title('use 32 series');
+
+saveas(gcf, "plots/P3_5_h_out.png");
+close;
+
