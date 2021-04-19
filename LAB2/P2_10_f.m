@@ -46,17 +46,10 @@ x2=(-b2+d2^0.5)/(2*a2);
 % N: 501
 % Peak 1: 13160
 % Peak 2: 6938
-<<<<<<< Updated upstream
 % alpha: 0.7
 
 N = 501;
 yo2 = filter(1, [1 zeros(1, N-1) x2], y2);
-=======
-% alpha: 0.1 Too small, the peak is fake !!!!!
-N = 500;
-alpha = 0.1;
-yo2 = filter(1, [1 zeros(1, N-1) alpha], y2);
->>>>>>> Stashed changes
 sound(yo2, 8192);
 
 % For y3 ----------------------------------------
@@ -79,14 +72,8 @@ saveas(gcf, "plots/P2_10_f_out1_3.png");
 
 N = 751;
 N1 = 2252;
-<<<<<<< Updated upstream
-alpha1 = 0.75;
-alpha2 = 0.6;
-b = [1 zeros(1, 750) alpha1 zeros(1, 1500) alpha2] ;
-=======
 alpha = 0.5;
 alpha1 = 0.28;
 b = [1 zeros(1, N-1) alpha zeros(1, N1-1)] + [1 zeros(1, N1-1) alpha1 zeros(1, N-1)];
->>>>>>> Stashed changes
 yo3 = filter(1, b, y3);
 sound(yo3, 8192);
