@@ -53,13 +53,22 @@ saveas(gcf, 'plots/P4_6_d_out.png')
 % 4.6(f)
 
 % 4.6(g)
-x1 = x .* sin(2*pi*f1*t(1:length(x)))
+% x1 = x .* sin(2*pi*f1*t(1:length(x)))
+% m1 = lsim(bf, af, x1, t(1:length(x1)))
+
+% x2 = x .* sin(2*pi*f2*t(1:length(x)))
+% m2 = lsim(bf, af, x2, t(1:length(x2)))
+
+% x3 = x .* cos(2*pi*f1*t(1:length(x)))
+% m3 = lsim(bf, af, x3, t(1:length(x3)))
+
+x1 = x .* cos(2*pi*f1*t(1:length(x)))
 m1 = lsim(bf, af, x1, t(1:length(x1)))
 
-x2 = x .* sin(2*pi*f2*t(1:length(x)))
+x2 = x .* cos(2*pi*f2*t(1:length(x)))
 m2 = lsim(bf, af, x2, t(1:length(x2)))
 
-x3 = x .* cos(2*pi*f1*t(1:length(x)))
+x3 = x .* -sin(2*pi*f1*t(1:length(x)))
 m3 = lsim(bf, af, x3, t(1:length(x3)))
 
 figure;
