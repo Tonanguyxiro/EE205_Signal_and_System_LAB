@@ -80,5 +80,6 @@ saveas(gcf, "plots/P4_6_g_out.png")
 close
 
 % . _ _ . P
-% . _ _ .
+% . . .   S
+% _ . .   D
 
