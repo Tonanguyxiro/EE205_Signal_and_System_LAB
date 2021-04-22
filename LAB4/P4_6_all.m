@@ -47,6 +47,7 @@ plot(t(1:length(y)), yo);
 title('After being filtered');
 
 saveas(gcf, 'plots/P4_6_d_out.png')
+close
 
 % 4.6(e)
 
@@ -65,10 +66,10 @@ saveas(gcf, 'plots/P4_6_d_out.png')
 x1 = x .* cos(2*pi*f1*t(1:length(x)))
 m1 = lsim(bf, af, x1, t(1:length(x1)))
 
-x2 = x .* cos(2*pi*f2*t(1:length(x)))
+x2 = x .* sin(2*pi*f2*t(1:length(x)))
 m2 = lsim(bf, af, x2, t(1:length(x2)))
 
-x3 = x .* -sin(2*pi*f1*t(1:length(x)))
+x3 = x .* sin(2*pi*f1*t(1:length(x)))
 m3 = lsim(bf, af, x3, t(1:length(x3)))
 
 figure;
@@ -88,7 +89,8 @@ xlabel('t');
 saveas(gcf, "plots/P4_6_g_out.png")
 close
 
-% . _ _ . P
-% . . .   S
+
 % _ . .   D
+% . . .   S
+% . _ _ . P
 
