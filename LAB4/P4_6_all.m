@@ -1,7 +1,7 @@
 load ctftmod.mat
 
 % 4.6(a)
-z = [dash dash dot dot]
+z = [dash dash dot dot];
 
 % 4.6(b)
 figure;
