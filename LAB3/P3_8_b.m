@@ -18,4 +18,4 @@ ylabel('H2(e^{j\omega} )');
 title('frequency responses of Systems 2');
 
 saveas(gcf, "plots/P3_8_b_out.png");
-close;
+%close;
