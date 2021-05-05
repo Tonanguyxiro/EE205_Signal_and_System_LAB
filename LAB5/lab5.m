@@ -11,6 +11,8 @@ plot(w,Pxx);
 title('The power spectral density of the speech signal');
 xlabel('w');
 ylabel('Pxx');
+saveas(gcf, "plots/P5_1_out1.png");
+close;
 
 b=fir2(3000,w/(fs/2),sqrt(Pxx/max(Pxx)));
 [h,wh]=freqz(b,1,128);
@@ -21,6 +23,9 @@ plot(w1,Pxx1);
 title('The power spectral density of the speech-shaped noise');
 xlabel('w1');
 ylabel('Pxx1');
+saveas(gcf, "plots/P5_1_out2.png");
+close;
+
 
 %5.2
 ssn=norm(y1)*ssn/10^(-5/20)/norm(ssn);
@@ -39,6 +44,8 @@ plot(envelop3);
 title('f_{cut}=100 Hz');
 xlim([0,6000]);
 
+
+
 [b,a]=butter(2,200/(fs/2));
 envelop2=filter(b,a,y);
 subplot(3,1,2);
@@ -46,12 +53,15 @@ plot(envelop2);
 title('f_{cut}=200 Hz');
 xlim([0,6000]);
 
+
 [b,a]=butter(2,300/(fs/2));
 envelop3=filter(b,a,y);
 subplot(3,1,3);
 plot(envelop3);
 title('f_{cut}=300 Hz');
 xlim([0,6000]);
+saveas(gcf, "plots/P5_3_out1.png");
+close;
 
 figure(4);
 [b,a]=butter(2,200/(fs/2));
@@ -67,3 +77,5 @@ subplot(2,1,2);
 plot(envelop);
 title('6th order');
 xlim([0,6000]);
+saveas(gcf, "plots/P5_3_out2.png");
+close;
