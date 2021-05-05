@@ -77,14 +77,17 @@ subplot(3,1,1)
 plot(t, m1);
 title('m1');
 xlabel('t');
+ylabel('m1');
 subplot(3,1,2)
 plot(t, m2);
 title('m2');
 xlabel('t');
+ylabel('m2');
 subplot(3,1,3)
 plot(t, m3);
 title('m3');
 xlabel('t');
+ylabel('m3');
 
 saveas(gcf, "plots/P4_6_g_out.png")
 close
